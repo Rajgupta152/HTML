@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <style>
+        #forms{
+                 background-color: aquamarine;
+                 padding-top: 5%;
+                 padding-left: 30%;
+                 padding-bottom: 5%;
+                 width: 50%;
+                 
+        }
+        input{
+            background-color: rgb(130, 130, 239);
+            
+        }
+    </style>
+</head>
+<body>
+<div id="forms">
+    <form>
+        <label for="fname">firstname:</label>
+        <input type="text" id="fname" placeholder="enter your first name"><br><br>
+          
+        <label for="lname">lastname:</label>
+        <input type="text" id="lname" placeholder="enter your last name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="abcd@example.com"><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="12@kd"><br><br>
+
+
+        <label for="language">Select your proficient language </label>
+        <Select name="language" id="language">
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="sanskrit">Sanskrit</option>
+        </Select><br><br>
+
+       <fieldset style="display: inline;">
+        <legend>Gender:</legend>
+        <label for="male">Male</label>
+        <!-- name attribute must to create radio button -->
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">other</label>
+        <input type="radio" id="other" name="gender" value="other">
+       </fieldset><br><br>
+
+       <!-- chechbox -->
+      <fieldset>
+        <legend>choose your favorite cricketer:</legend>
+        <input type="checkbox" id="player1" name="checker">
+        <label for="player1">Virat Kohli</label><br>
+
+        <input type="checkbox" id="player2" name="checker">
+        <label for="player2">Virat Kohli</label><br>
+
+        <input type="checkbox" id="player3" name="checker">
+        <label for="player3">Virat Kohli</label><br>
+      </fieldset><br><br>
+
+      <!-- date picker -->
+      
+      <label for="datepicker">Date Of Birth:</label>
+      <input type="date" id="datepicker" name="date"><br><br>
+
+      <label for="file">Resume:</label>
+      <input type="file" id="file" name="file"><br><br>
+       
+    <label for="colorpicker">Color Picker:</label>   
+    <input type="color" id="colorpicker" name="color"><br><br>
+
+    <label for="img"> Image:</label>
+    <input type="image" id="img" name="image" src="WIN_20211023_08_43_50_Pro.jpg" alt="Developer" width="50px"><br><br>
+
+    <label for="num">Phone:</label>
+    <input type="number" id="num" name="number"><br><br>
+
+    <label for="price">Price:</label>
+    <input type="range" id="price" name="price" min="10" max="50" ><br><br>
+
+    <label for="Reset:"></label>
+    <input type="reset" id="reset"><br><br>
+
+    <label for="search">Search:</label>
+    <input type="search" name="search" id="search">
+    <button>Search</button><br><br>
+
+    <label for="url">Enter an https:// URL:</label>
+
+   <input type="url" name="url" id="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="30"><br><br>
+   
+       <label for="time">time:</label>
+       <input type="time" id="time"><br><br>
+        <button>Click here</button>
+    </form>
+</div>
+</body>
+</html>
